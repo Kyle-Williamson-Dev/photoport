@@ -1,0 +1,14 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  font-family: "Montserrat", "san-serif";
+}
+
+
+.nav {
+  display: flex;
+  position: fixed;
+  height: 50px;
+  align-items: flex-end;
+  opacity: 0;
+}
