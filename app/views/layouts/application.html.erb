@@ -8,18 +8,20 @@
 
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= stylesheet_link_tag "home", "data-turbo-track": "reload" %>
+    <%= stylesheet_link_tag "portfolio", "data-turbo-track": "reload" %>
+    <%= stylesheet_link_tag "contact", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
   </head>
 
   <body>
 
-    <nav>
-      <ul>
+    <div class="nav">
+      <ul class="navlist">
         <%= link_to "Home", root_path %>
         <%= link_to "Portfolio", portfolio_index_path %>
         <%= link_to "Book me", booking_index_path %>
       </ul>
-    </nav>
+    </div>
 
     <%= yield %>
   </body>

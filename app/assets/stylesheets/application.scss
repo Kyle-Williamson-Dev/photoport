@@ -7,8 +7,29 @@ html, body {
 
 .nav {
   display: flex;
-  position: fixed;
-  height: 50px;
-  align-items: flex-end;
-  opacity: 0;
+  align-items: center ;
+  justify-content: center;
+  width: 100%;
+  position: absolute;
+  height: 100px;
+  background-color: transparent;
+  z-index: 1000;
+}
+
+.navlist {
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  font-size: 2.1em;
+  font-weight: 100;
+  color: #fff;
+  margin: 20px;
+  padding: 20px;
+}
+
+a:hover {
+  background-color: #fff;
+  color: #000;
 }

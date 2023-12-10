@@ -1,0 +1,11 @@
+body {
+  background-color: #202020;
+}
+
+.port-container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  top: 100px;
+  left: 50%
+}
