@@ -1,7 +1,60 @@
 .port-container {
   display: flex;
+  padding: 0;
   flex-direction: column;
   position: relative;
   top: 100px;
-  left: 50%
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.portraits-section {
+  align-items: center;
+  justify-content: center;
+  width: 80%;
+  margin: 0;
+  column-count: 4;
+  column-gap: .5em;
+}
+
+@media screen and (max-width: 768px) {
+  .portraits-section {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .portraits-section {
+    width: 1000%;
+  }
+}
+  
+.portraits-section-item {
+  margin: 0;
+  width: 100%;
+}
+
+.portraits-section-item img {
+  margin: 0 0 .5em 0;
+}
+
+@media screen and (max-width: 768px) {
+  .portraits-section {
+  column-count: 3;
+  } 
+}
+  
+@media screen and (max-width: 480px) {
+  .portraits-section {
+  column-count: 2;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .portraits-section {
+  column-count: 1;
+  }
 }
