@@ -7,6 +7,8 @@ Rails.application.routes.draw do
   get "portfolio/index"
   get "booking/index"
   get "contact_form/new"
-  resources :contact_form, only: %i[new create]
   get "pricing/index"
+
+  resources :contact_form, only: [:new, :create]
+  
 end

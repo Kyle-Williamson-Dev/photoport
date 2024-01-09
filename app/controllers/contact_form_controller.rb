@@ -1,14 +1,23 @@
 class ContactFormController < ApplicationController
 
-  def create
-    @name = params[:contact_form][:name]
-    @last_name = params[:contact_form][:last_name]
-    @email = params[:contact_form][:email]
-    @message = params[:contact_form][:message]
+  def new
+    @contact_form = ContactFormHelper.new
+  end
 
-    NotifierMailer.simple_messages(@name, @last_name, @email, @message).deliver_now
-    flash[:success] = "Your message has been sent. We will get back to you shortly!"
-    redirect_to :root
+  def create
+    @contact_form = ContactFormHelper.new(contact_params)
+
+    if @contact_form.save
+      redirect_to root_path, notice: "Message sent successfully!"
+    else 
+      render :new
+    end
+  end
+
+  private
+
+  def contact_params
+    params.require(:contact_form).permit(:name, :email, :message)
   end
 
 end
