@@ -8,19 +8,24 @@
 
   <%= form_with(model: @contact, url: booking_index_path,  data: {turbo: false}) do |form| %>
   
-  <div class="name-fields">
-    <%= form.label :name %>
-    <%= form.text_field :name, class: "form-control" %>
+  <div class="label">
+    <%= form.label :full_name %>
+    <%= form.text_field :full_name, class: "form-control" %>
   </div>
 
-  <%= form.label :last_name %>
-  <%= form.text_field :last_name, class: "form-control" %>
+  <div class="label">
+    <%= form.label :email %>
+    <%= form.email_field :email, class: "form-control" %>
+  </div>
 
-  <%= form.label :email %>
-  <%= form.email_field :email, class: "form-control" %>
+  <div class="label">
+    <%= form.label :message %>
+    <%= form.text_area :message, class: "form-control" %>
+  </div>
 
-  <%= form.label :message %>
-  <%= form.text_area :message, class: "form-control" %>
+  <div class="submit">
+    <%= form.submit 'Send Message', class: "btn" %>
+  </div>
 
   <% end %>
 
