@@ -4,9 +4,8 @@
     <h1 id="business" style="text-decoration:underline; text-decoration-thickness:2px;">Photography</h1>
     <br>
     <p id="slogan">"Capturing beauty, creating dreams. Where every pose tells a story."</p>
+    <%= mail_to "k.dubphotographyco@gmail.com", "Hire me!", class: "email-link" %>
   </div>
-  <br>
-  <%= link_to "Hire me for timeless photos!", booking_index_path %>
 </div>
 
 <div class="about-me">
@@ -20,7 +19,7 @@
       for visiting, and I look forward to providing you with timless photos. 
       </p></li>
     </ul>
-    <%= image_tag("me.jpg")%>
+    <%= image_tag("me.jpg") %>
   </div>
 </div>
 
@@ -28,4 +27,8 @@
   <div class="testimonial-text">
     
   </div>
+</div>
+
+<div>
+
 </div>
