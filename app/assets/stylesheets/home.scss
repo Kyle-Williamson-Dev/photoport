@@ -24,6 +24,13 @@
   top: 50%;
 }
 
+.email-and-booking {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+}
+
 .email-link {
   display: flex;
   flex-direction: column;
@@ -33,6 +40,7 @@
   font-size: 1.5em;
   font-weight: 400;
   padding: 30px;
+  margin-right: 40px;
   position: relative;
   border: 1px solid #c99b57;
   border-radius: 20px;
@@ -44,6 +52,21 @@
   color: #1d1d1d;
   font-weight: 400;
   transition: 0.5s;
+}
+
+.book-link {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: #1d1d1d;
+  background-color: #c99b57;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5em;
+  font-weight: 400;
+  padding: 30px;
+  position: relative;
+  border-radius: 20px;
+  top: 70%;
 }
 
 #business {
