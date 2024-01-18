@@ -21,16 +21,30 @@
         <%= link_to "Portfolio", portfolio_index_path, class: "nav-item" %>
       </ul>
       <div class="social-icons">
-        <ion-icon name="logo-instagram" id="instagram"></ion-icon>
-        <ion-icon name="logo-facebook" id="facebook"></ion-icon>
-        <ion-icon name="logo-pinterest" id="pinterest"></ion-icon>
-        <ion-icon name="mail-outline" id="email"></ion-icon>
+        <%= link_to "https://www.instagram.com/k.dub_photography/", target: "_blank" do %>
+          <ion-icon name="logo-instagram" id="instagram"></ion-icon>
+        <% end %>
+        <%= link_to "https://www.facebook.com/kdubphotographyco/", target: "_blank" do %>
+          <ion-icon name="logo-facebook" id="facebook"></ion-icon>
+        <% end %>
+        <%= link_to "https://www.pinterest.com/theactualkyle/", target: "_blank" do %>
+          <ion-icon name="logo-pinterest" id="pinterest"></ion-icon>
+        <% end %>
+        <%= mail_to "k.dubphotographyco@gmail.com", target: "_blank" do %>
+          <ion-icon name="mail-outline" id="email"></ion-icon>
+        <% end %>
       </div>
     </div>
+
+    
+    <%# <footer>
+      <p>Created by K.Dub Photogrpahy owner Kyle Williamson. <span>&copy;</span>2024</p>
+    </footer> %>
 
     <%= yield %>
 
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    
   </body>
 </html>

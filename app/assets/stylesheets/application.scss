@@ -2,7 +2,7 @@ html, body {
   height: 100%;
   margin: 0;
   font-family: "Montserrat", "san-serif";
-  background-color: #202020;
+  background-color: #1d1d1d;
   box-sizing: border-box;
 }
 
@@ -29,8 +29,9 @@ html, body {
   font-size: 2.1em;
   font-weight: 200;
   color: #c99b57;
-  padding: 20px;
+  padding: 10px;
   margin: 0 20px 0 20px;
+  border-radius: 20px;
 }
 
 .nav-item:hover {
@@ -42,11 +43,44 @@ html, body {
 .logo {
   font-size: 1.8em;
   color: #c99b57;
-  margin: 0 100px 0 40px;
+  margin: 0 100px 0 60px;
+}
+
+.social-icons a {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
 }
 
 ion-icon {
   font-size: 1.8em;
   color: #c99b57;
-  padding: 0 20px 0 0;
+  margin: 0 20px 0 0;
+  padding-bottom: 2px;
+}
+
+
+#instagram:hover {
+  color: #eb2963;
+  transition: 0.3s;
+}
+
+#facebook:hover {
+  color: #1877F2;
+  transition: 0.3s;
+}
+
+#pinterest:hover {
+  color: #C8232C;
+  transition: 0.3s;
+}
+
+#email:hover {
+  color: #fff;
+  transition: 0.3s;
+}
+
+footer {
+  height: 100px;
+  width: 100%;
 }
