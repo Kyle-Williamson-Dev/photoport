@@ -83,9 +83,46 @@ ion-icon {
 .burger-menu {
   display: none;
 }
+
+
 // Footer //
 
 footer {
   height: 100px;
   width: 100%;
+}
+
+
+@media screen and (max-width: 768px) {
+
+  .logo {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navlist {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+  }
+
+  .navlist.show {
+    display: flex;
+  }
+
+  .nav-item {
+    text-align: center;
+    margin: 10px 0;
+  }
+
+  .social-icons {
+    display: none;
+  }
+
+  .burger-menu {
+    display: block;
+  }
 }
