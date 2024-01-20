@@ -154,7 +154,17 @@ img {
     text-align: center;
   }
 
+  .email-link {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+    padding: 10px;
+  }
 
+  .book-link {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+    padding: 10px;
+  }
 
   #business {
     font-size: 2em;
@@ -176,19 +186,19 @@ img {
   }
 
   .about-me-blurb {
-    font-size: 2em;
+    font-size: 1.75em;
     width: 80%
+  }
+
+  h2 {
+    font-size: 1.0;
   }
 
   p {
     font-size: .8em;
   }
 
-  .email-link {
-    font-size: 1.2em;
+  img {
+    margin-bottom: 100px;
   }
-
-  .book-link {
-    font-size: 1.2em;
-  }
-}
+} 
