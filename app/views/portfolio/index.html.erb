@@ -3,7 +3,7 @@
   <% if @sections.present? %>
     <% @sections.each do |section| %>
       <%= link_to section[:path], class: "portfolio-genre" do %>
-        <div class="photos" style="background-image: url('<%= asset_url(section[:image_url]) %>');">
+        <div class="photos" style="background-image: url('<%= section[:image_url] %>');">
             <h2><%= section[:title] %></h2>
         </div>
       <% end %>
