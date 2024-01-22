@@ -4,7 +4,7 @@
     <% @sections.each do |section| %>
       <%= link_to section[:path], class: "portfolio-genre" do %>
         <div class="photos" style="background-image: url('<%= asset_path(section[:image_url]) %>');">
-            <h2><%= section[:title] %></h2>
+          <h2><%= section[:title] %></h2>
         </div>
       <% end %>
     <% end %>
