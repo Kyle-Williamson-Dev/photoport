@@ -1,7 +1,6 @@
 Rails.application.routes.draw do
   # List of genres within my portrfolio
   get 'boudoir/index'
-  get 'fitness/index'
   get 'headshots/index'
   get 'portraits/index'
   get 'couples/index'

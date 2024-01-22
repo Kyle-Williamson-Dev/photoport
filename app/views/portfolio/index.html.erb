@@ -1,8 +1,13 @@
 <div class="portolio-main">
-  <ul class="portfolio-list">
-    <%= link_to "Portraits", portraits_index_path, class: "portfolio-genere" %>
-    <%= link_to "Headshots", headshots_index_path, class: "portfolio-genere" %>
-    <%= link_to "Couples", couples_index_path, class: "portfolio-genere" %>
-    <%= link_to "Fitness", fitness_index_path, class: "portfolio-genere" %>
-  </ul>
+  
+  <% if @sections.present? %>
+    <% @sections.each do |section| %>
+      <%= link_to section[:path], class: "portfolio-genre" do %>
+        <div class="photos" style="background-image: url('<%= section[:image_url] %>');">
+            <h2><%= section[:title] %></h2>
+        </div>
+      <% end %>
+    <% end %>
+  <% end %>
+
 </div>
