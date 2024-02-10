@@ -5,6 +5,7 @@
       <%= link_to section[:path], class: "portfolio-genre" do %>
         <div class="photos" style="background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('<%= asset_path(section[:image_url]) %>'); background-size: cover;">
           <h2><%= section[:title] %></h2>
+          <p><%= section[:blurb] %></p>
         </div>
       <% end %>
     <% end %>
