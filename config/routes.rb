@@ -1,14 +1,9 @@
 Rails.application.routes.draw do
-  # List of genres within my portrfolio
-  get 'boudoir/index'
-  get 'headshots/index'
-  get 'portraits/index'
-  get 'couples/index'
-  
 
-  # Defines the root path route ("/")
   root "home#index"
-  get "portfolio/index"
+  get 'portfolio', to: 'portfolio#index'
+  get 'portfolio/:genre', to: 'portfolio#show', as: :portfolio_genre
+
 end
 
 # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
