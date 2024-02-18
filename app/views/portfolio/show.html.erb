@@ -1,0 +1,8 @@
+<div class="gallery-container">
+  <% @images.each do |image| %>
+    <div class="gallery-item">
+      <%= image_tag(image.url, alt: image.description) %>
+      <p><%= image.description %></p>
+    </div>
+  <% end %>
+</div>
