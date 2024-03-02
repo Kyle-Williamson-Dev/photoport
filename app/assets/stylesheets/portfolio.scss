@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
 .portfolio-main {
   margin: 0;
   padding: 0;
@@ -22,7 +24,7 @@
   flex-direction: column;
   justify-content: flex-end;
   text-align: center;
-  align-items: flex-end;
+  align-items: center;
   background-size: cover;
   background-position: center;
 }
@@ -48,6 +50,15 @@ a {
   max-width: 100%;
   height: auto;
 }
+
+.section-title {
+  font-family: "Dancing Script", cursive;
+  font-weight: 400;
+  font-size: 4em;
+  color: #c99b57;
+}
+
+// Media Queries //
 
 @media screen and (max-width: 768px) {
   .gallery-container {
