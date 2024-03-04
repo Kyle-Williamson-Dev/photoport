@@ -6,6 +6,13 @@ html, body {
   box-sizing: border-box;
 }
 
+.logo {
+  width: auto;
+  height: 100px;
+  margin: 0;
+  padding: 0;
+}
+
 .nav {
   padding: 0;
   margin: 0;
@@ -38,12 +45,6 @@ html, body {
   background-color: #c99b57;
   color: #1d1d1d;
   transition: 0.5s;
-}
-
-.logo {
-  font-size: 1.8em;
-  color: #c99b57;
-  margin: 0 100px 0 60px;
 }
 
 .social-icons a {
