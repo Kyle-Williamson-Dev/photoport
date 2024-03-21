@@ -17,25 +17,28 @@
 
     <div class="nav">
       <%= image_tag("Logo1fornav.jpg", class: "logo") %>
-      <ul class="navlist">
-        <%= link_to "Home", root_path, class: "nav-item" %>
-        <%= link_to "Portfolio", portfolio_path, class: "nav-item" %>
-      </ul>
-      <div class="social-icons">
-        <%= link_to "https://www.instagram.com/k.dub_photography", target: "_blank" do %>
-          <ion-icon name="logo-instagram" id="instagram"></ion-icon>
-        <% end %>
-        <%= link_to "https://www.facebook.com/kdubphotographyco", target: "_blank" do %>
-          <ion-icon name="logo-facebook" id="facebook"></ion-icon>
-        <% end %>
-        <%= link_to "https://www.pinterest.com/theactualkyle/", target: "_blank" do %>
-          <ion-icon name="logo-pinterest" id="pinterest"></ion-icon>
-        <% end %>
-        <%= mail_to "k.dubphotographyco@gmail.com", target: "_blank" do %>
-          <ion-icon name="mail-outline" id="email"></ion-icon>
-        <% end %>
+      <div class="burger-menu" onclick="toggleMenu()">☰</div>
+      <div class="burger-menu-dropdown">
+        <ul class="navlist">
+          <%= link_to "Home", root_path, class: "nav-item" %>
+          <%= link_to "Portfolio", portfolio_path, class: "nav-item" %>
+        </ul>
+        <%= link_to "Book a session!", "https://kdubphotography.hbportal.co/public/65a8c2747cbd3700305214b2", class: "book-link-desktop" %>
+        <div class="social-icons">
+          <%= link_to "https://www.instagram.com/k.dub_photography", target: "_blank" do %>
+            <ion-icon name="logo-instagram" id="instagram"></ion-icon>
+          <% end %>
+          <%= link_to "https://www.facebook.com/kdubphotographyco", target: "_blank" do %>
+            <ion-icon name="logo-facebook" id="facebook"></ion-icon>
+          <% end %>
+          <%= link_to "https://www.pinterest.com/theactualkyle/", target: "_blank" do %>
+            <ion-icon name="logo-pinterest" id="pinterest"></ion-icon>
+          <% end %>
+          <%= mail_to "k.dubphotographyco@gmail.com", target: "_blank" do %>
+            <ion-icon name="mail-outline" id="email"></ion-icon>
+          <% end %>
+        </div>
       </div>
-      <div class="burger-menu">&#9776</div>
     </div>
 
     

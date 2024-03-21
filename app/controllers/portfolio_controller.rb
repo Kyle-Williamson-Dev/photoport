@@ -3,7 +3,7 @@ class PortfolioController < ApplicationController
   def index
     @sections = [
       { title: "Portraits", path: portfolio_genre_path('portraits'), image_url: view_context.asset_path("Chelsea1.jpg") },
-      { title: "Headshots", path: portfolio_genre_path('headshots'), image_url: view_context.asset_path("Jaclyn2.jpg") },
+      { title: "Headshots", path: portfolio_genre_path('headshots'), image_url: view_context.asset_path("Jaclyn8.jpg") },
       { title: "Couples", path: portfolio_genre_path('couples'), image_url: view_context.asset_path("treandanna2.jpg") },
       { title: "Boudoir", path: portfolio_genre_path('boudoir'), image_url: view_context.asset_path("jaclyn_boudoir2.jpg") },
     ]
