@@ -12,6 +12,7 @@ class PortfolioController < ApplicationController
   def show
     @genre = Genre.find_by(name: params[:genre].capitalize)
     @images = @genre.images if @genre
+    @images = Image.all
   end
   
 end
