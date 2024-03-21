@@ -6,13 +6,6 @@ html, body {
   box-sizing: border-box;
 }
 
-.logo {
-  width: auto;
-  height: 100px;
-  margin: 0;
-  padding: 0;
-}
-
 .nav {
   padding: 0;
   margin: 0;
@@ -26,7 +19,21 @@ html, body {
   z-index: 1000;
 }
 
-.navlist {
+.logo {
+  width: auto;
+  height: 100px;
+  margin: 0;
+  padding: 0;
+}
+
+.logo-2 {
+  display: none;
+}
+
+.navlist,
+.social-icons {
+  display: flex;
+  list-style: none;
   padding: 0;
   margin: 0;
 }
@@ -55,6 +62,10 @@ html, body {
   padding: 0;
   margin: 0;
   text-decoration: none;
+}
+
+.social-icons a:last-child {
+  margin-right: 0;
 }
 
 ion-icon {
@@ -88,7 +99,7 @@ ion-icon {
 .burger-menu {
   display: none;
   cursor: pointer;
-  font-size: 20px;
+  font-size: 30px;
 }
 
 .book-link-desktop {
@@ -96,60 +107,65 @@ ion-icon {
 }
 
 .burger-menu-dropdown {
-  display: none;
-}
-
-// Footer //
-
-footer {
-  height: 100px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
   width: 100%;
 }
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
 
   .nav {
     justify-content: space-around;
   }
 
-  .logo {
-    margin: 0;
-    padding: 0;
-  }
-  
   .navlist {
+    display: block; 
+  }
+
+  .nav-item {
+    font-size: 1.3em;
+  }
+
+  .logo {
     display: none;
-    justify-content: center;
-    width: 100%;
   }
 
   .burger-menu {
     display: block;
     color: #00144f;
   }
-  
-  .navlist.active, .burger-menu-dropdown.active {
-    display: block;
-  }
 
   .social-icons {
-    display: block;
-  }
-
-
-  .book-link-desktop {
-    display: block;
-  }
-
-  .nav-item {
+    display: flex;
+    justify-content: center;
     text-align: center;
-    margin: 10px 0;
   }
 
-  .social-icons {
+  .burger-menu-dropdown {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    top: 100%;
+    left: auto;
+    background-color: #fff;
     display: none;
+    text-align: center;
+  }
+  
+  .burger-menu-dropdown.active {
+    display: block;
   }
 
- 
+  .burger-menu-dropdown a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 1.5em;
+    font-weight: 400;
+    color: #00144f;
+    margin-top: 10px;
+  }
+
 }

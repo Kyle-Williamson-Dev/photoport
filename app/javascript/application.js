@@ -5,14 +5,9 @@
 // document.addEventListener('DOMContentLoaded', function () {
  
 // });
-
 function toggleMenu() {
-  console.log('toggleMenu() function called');
-  var menu = document.querySelector('nav .navlist');
   var dropdown = document.querySelector('.burger-menu-dropdown');
-
-  if (menu && dropdown) {
-    menu.classList.toggle('active');
+  if (dropdown) {
     dropdown.classList.toggle('active');
   }
 }
